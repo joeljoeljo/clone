@@ -35,6 +35,6 @@ if __name__ == '__main__':
         img_path = model.get_image_paths()
         if i % 5 == 0:
             print('processing (%04d)-th image... %s' % (i, img_path))
-        save_images(webpage, visuals, img_path, aspect_ratio=opt.aspect_ratio, width=opt.display_winsize)
+        save_images(webpage, visuals, img_path, aspect_ratio=opt.aspect_ratio)
     # save the website
     webpage.save()
